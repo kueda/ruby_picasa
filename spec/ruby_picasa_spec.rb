@@ -155,7 +155,7 @@ describe Picasa do
     before do
       @p.expects(:auth_header).returns('Authorization' => 'etc')
       @http.expects(:use_ssl=).with true
-      @http.expects(:get).with('/accounts/accounts/AuthSubSessionToken', 
+      @http.expects(:get).with('/accounts/AuthSubSessionToken', 
         'Authorization' => 'etc').returns(@response)
     end
 
